@@ -5,7 +5,7 @@ from docx import Document
 
 #Setup API
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
-model = genai.GenerativeModel("models/gemini-1.5-pro")
+model = genai.GenerativeModel("models/gemini-2.5-pro")
 
 #Extracting text from pdf
 def extract_text_from_pdf(uploaded_file):
